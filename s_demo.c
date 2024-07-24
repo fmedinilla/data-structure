@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include "stack.h"
 
-/* ENTRY POINT */
+
 int main(void)
 {
     Stack *stack = s_create();
@@ -22,14 +22,12 @@ int main(void)
     printf("Top item: %d\n", v);
     s_unstack(stack);
 
-    // print stack
     Node *aux = stack->HEAD;
     while (aux != NULL) {
         printf("Stack Item { addr: %p, value: %d, next: %p}\n", aux, aux->value, aux->next);
         aux = aux->next;
     }
 
-    // Free all resources
     aux = stack->HEAD;
     while (aux != NULL) {
         Node *temp = aux;
@@ -38,6 +36,5 @@ int main(void)
     }
     free(stack);
 
-    // return value
     return 0;
 }

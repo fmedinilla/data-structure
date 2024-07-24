@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include "queue.h"
 
-/* ENTRY POINT */
+
 int main(void)
 {
     Queue *queue = q_create();
@@ -29,7 +29,6 @@ int main(void)
         aux = aux->next;
     }
 
-    // free resources
     aux = queue->HEAD;
     while (aux != NULL) {
         Node *temp = aux;
@@ -38,6 +37,5 @@ int main(void)
     }
     free(queue);
 
-    // return value
     return 0;
 }

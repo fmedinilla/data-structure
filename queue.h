@@ -3,11 +3,13 @@
 
 #include "shared.h"
 
+
 typedef struct {
     int size;
     Node *HEAD;
     Node *TAIL;
 } Queue;
+
 
 Queue *q_create();
 void q_enqueue(Queue *queue, int value);

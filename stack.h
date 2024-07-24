@@ -3,6 +3,7 @@
 
 #include "shared.h"
 
+
 typedef struct {
     int size;
     Node *HEAD;
