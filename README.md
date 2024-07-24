@@ -23,7 +23,7 @@ Basic data structures in C.
 ## Linked list
 
 - `l_create`: Creates a empty list.
-- `l_insert`: Inserts an element in front of point of interest.
+- `l_insert`: Inserts an element in front of POI.
 - `l_remove`: Deletes the element and move POI forward.
 - `l_current`: Gets the current element from list.
 - `l_begining`: Set POI to the first element of list.
